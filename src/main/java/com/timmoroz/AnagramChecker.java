@@ -4,7 +4,7 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 /**
- * Check if the two strings are anagrams of each other.
+ * Check if two strings are anagrams of each other.
  * Case-insensitive; ignores non-alphabet characters.
  */
 public final class AnagramChecker {
@@ -12,10 +12,10 @@ public final class AnagramChecker {
     private AnagramChecker() {}
 
     /**
-     * Checks if two strings are anagrams of each other.
+     * Check if two strings are anagrams of each other.
      *
-     * @param string1 string one
-     * @param string2 string two
+     * @param string1 the first string
+     * @param string2 the second string
      * @return whether strings are anagrams
      */
     public static boolean isLetterBasedAnagram(String string1, String string2) {
@@ -28,7 +28,7 @@ public final class AnagramChecker {
 
     /**
      * Reduce the given text to lower case letters by removing all non-alphabet characters
-     * and then converting all character to lower case.
+     * and converting remaining letters to lower case.
      *
      * @param text original text
      * @return text reduced to lower case letters
