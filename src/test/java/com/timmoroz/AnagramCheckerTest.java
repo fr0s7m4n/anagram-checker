@@ -18,8 +18,6 @@ class AnagramCheckerCheckerTest {
             "ABCXYZabcxyz123?!,.-;:(){}  |  abcxyzabcxyz",
             "Santa; shy, less cruel|santashylesscruel"})
     void reduceToLowerCaseLetters(String input, String output) {
-        System.out.println("input: " + input);
-        System.out.println("output: " + output);
         assertThat(AnagramChecker.reduceToLowerCaseLetters(input)).isEqualTo(output);
     }
 
